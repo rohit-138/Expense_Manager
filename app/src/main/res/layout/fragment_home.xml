@@ -11,21 +11,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="welcome to home screen"
-        android:textSize="40sp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
         android:text="Logout"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="483dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

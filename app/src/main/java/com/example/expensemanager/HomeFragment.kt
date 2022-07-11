@@ -6,10 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.expensemanager.databinding.FragmentHomeBinding
 
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(R.layout.fragment_home) {
     private var binding:FragmentHomeBinding?=null
 
 
@@ -28,13 +29,17 @@ class HomeFragment : Fragment() {
         val btnLogout=binding?.btnLogout
         val sharedPref=this.activity?.getSharedPreferences("loginTokens", Context.MODE_PRIVATE)
         val editor=sharedPref?.edit()
+        val loginFragment=LoginFragment()
 
-//        btnLogout?.setOnClickListener {
-//            editor?.clear()
-//            editor?.commit()
-//            replaceFragment(LoginFragment())
-//
-//        }
+        btnLogout?.setOnClickListener {
+//            editor?.putString("token","")
+//            editor?.putBoolean("success",false)
+            editor?.clear()
+            editor?.commit()
+            Toast.makeText(activity,"clicked on logout button",Toast.LENGTH_SHORT).show()
+            replaceFragment(loginFragment)
+
+        }
 
 
 

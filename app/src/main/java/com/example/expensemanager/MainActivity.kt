@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         val viewModelFactory=MainViewModelFactory(repository)
         viewModel=ViewModelProvider(this,viewModelFactory) [MainViewModel::class.java]
 
-//        var LoginBtn=binding.LoginBtn
     var loginFragment=LoginFragment()
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()

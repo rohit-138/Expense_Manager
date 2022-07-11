@@ -55,6 +55,11 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                     editor?.putString("token",response.body()?.token.toString())
                     response.body()?.let { it1 -> editor?.putBoolean("success", it1.success) }
                     editor?.commit()
+                    val loginStatus=sharedPref?.getBoolean("success",false)
+                    if(loginStatus==true) {
+                        replaceFragment(HomeFragment())
+                    }
+
                 }
                 else{
                     Log.d("Main","Response unsuccessfull")
@@ -67,9 +72,9 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         }
         //checking whether user has received login token or not
         val loginStatus=sharedPref?.getBoolean("success",false)
+        Toast.makeText(activity,loginStatus.toString(),Toast.LENGTH_SHORT)
 
         if(loginStatus==true) return replaceFragment(HomeFragment())
-//        else return replaceFragment(LoginFragment())
 
     }
         //this function is used to replace one frament with another fragment
@@ -79,6 +84,4 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             fragmentTransaction.replace(R.id.fragment_Container,fragment)
             fragmentTransaction.commit()
         }
-
-
 }

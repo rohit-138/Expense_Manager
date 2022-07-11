@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.expensemanager.databinding.FragmentRegisterBinding
 
 
-class RegisterFragment : Fragment() {
+class RegisterFragment : Fragment(R.layout.fragment_register){
     private  var binding:FragmentRegisterBinding? = null
 
 
