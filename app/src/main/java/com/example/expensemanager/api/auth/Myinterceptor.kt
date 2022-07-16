@@ -1,4 +1,4 @@
-package com.example.expensemanager
+package com.example.expensemanager.api.auth
 
 import okhttp3.Interceptor
 import okhttp3.Request

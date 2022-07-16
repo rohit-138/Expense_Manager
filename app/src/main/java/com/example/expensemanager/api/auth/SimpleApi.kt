@@ -1,9 +1,6 @@
-package com.example.expensemanager.api
+package com.example.expensemanager.api.auth
 
-import com.example.expensemanager.models.LoginData
-import com.example.expensemanager.models.LoginResponse
-import com.example.expensemanager.models.RegisterData
-import com.example.expensemanager.models.RegisterResponse
+import com.example.expensemanager.models.*
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -22,6 +19,11 @@ interface SimpleApi {
     suspend fun pushRegisterDetails(
         @Body registerData:RegisterData
     ):Response<RegisterResponse>
+
+    @POST("/api/auth/sendOtp")
+    suspend fun pushSendOtp(
+        @Body sendotpdata:SendOtpData
+    ):Response<SendOtpResponse>
 
 
 }

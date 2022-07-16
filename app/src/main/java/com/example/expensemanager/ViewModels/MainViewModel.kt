@@ -1,12 +1,9 @@
-package com.example.expensemanager
+package com.example.expensemanager.ViewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.expensemanager.models.LoginData
-import com.example.expensemanager.models.LoginResponse
-import com.example.expensemanager.models.RegisterData
-import com.example.expensemanager.models.RegisterResponse
+import com.example.expensemanager.models.*
 import com.example.expensemanager.repository.Repository
 import kotlinx.coroutines.launch
 import retrofit2.Response
@@ -14,6 +11,7 @@ import retrofit2.Response
 class MainViewModel(private val repository: Repository):ViewModel() {
     val myresponse:MutableLiveData<Response<LoginResponse>>  = MutableLiveData()
     val myRegisterDataResponse:MutableLiveData<Response<RegisterResponse>> = MutableLiveData()
+    val mySendOtpResponse:MutableLiveData<Response<SendOtpResponse>> = MutableLiveData()
 
     fun getLoginDetails(login: LoginData){
         viewModelScope.launch {
@@ -27,5 +25,10 @@ class MainViewModel(private val repository: Repository):ViewModel() {
             myRegisterDataResponse.value=response
         }
     }
-
+    fun pushSendOtp(sendOtpData: SendOtpData){
+        viewModelScope.launch {
+            val response=repository.pushSendOtp(sendOtpData)
+            mySendOtpResponse.value=response
+        }
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.expensemanager
+package com.example.expensemanager.ViewModels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

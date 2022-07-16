@@ -1,18 +1,15 @@
 package com.example.expensemanager
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.expensemanager.AuthFragments.LoginFragment
+import com.example.expensemanager.ViewModels.MainViewModel
+import com.example.expensemanager.ViewModels.MainViewModelFactory
 import com.example.expensemanager.databinding.ActivityMainBinding
-import com.example.expensemanager.models.LoginData
 import com.example.expensemanager.repository.Repository
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
     lateinit var binding:ActivityMainBinding
     private lateinit var viewModel: MainViewModel
 
@@ -22,18 +19,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         //setting up api config
         var repository=Repository()
-        val viewModelFactory=MainViewModelFactory(repository)
+        val viewModelFactory= MainViewModelFactory(repository)
         viewModel=ViewModelProvider(this,viewModelFactory) [MainViewModel::class.java]
 
-    var loginFragment=LoginFragment()
+    var loginFragment= LoginFragment()
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragment_Container,loginFragment)
         fragmentTransaction.commit()
-
-
     }
-
 
 
 }

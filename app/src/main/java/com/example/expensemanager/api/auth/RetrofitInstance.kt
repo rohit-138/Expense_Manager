@@ -1,6 +1,5 @@
-package com.example.expensemanager.api
+package com.example.expensemanager.api.auth
 
-import com.example.expensemanager.Myinterceptor
 import com.example.expensemanager.utils.Constants.Companion.URL_BASE
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -19,7 +18,7 @@ object RetrofitInstance {
                 .build()
     }
 
-    val api:SimpleApi by lazy {
+    val api: SimpleApi by lazy {
          retrofit.create(SimpleApi::class.java)
     }
 }

@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/app_bar_home.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/content_home.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/content_home2.xml" value="0.25" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_otp.xml" value="0.25" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_register.xml" value="0.4" />
         <entry key="..\:/android/ExpenseManager/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2455" />
         <entry key="..\:/android/ExpenseManager/app/src/main/res/layout/activity_main.xml" value="0.25" />
