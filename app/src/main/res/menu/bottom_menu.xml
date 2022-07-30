@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/homeFragment"
+    android:title="Home"
+    android:icon="@drawable/ic_home"
+    />
+    <item
+        android:id="@+id/accountFragment"
+        android:title="Account"
+        android:icon="@drawable/ic_account"
+        />
+    <item
+        android:id="@+id/loader1"
+        android:title="    "
+
+        />
+
+    <item
+        android:id="@+id/helpFragment"
+        android:title="Help"
+        android:icon="@drawable/ic_help"
+        />
+    <item
+        android:id="@+id/exit"
+        android:title="Exit"
+        android:icon="@drawable/ic_exit"
+        />
+<!--    <item-->
+<!--        android:id="@+id/loader2"-->
+<!--        android:title=" "-->
+<!--        app:showAsAction="ifRoom"-->
+<!--        />-->
+
+</menu>

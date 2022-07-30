@@ -45,6 +45,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register){
                 val userEmail= binding?.editTextEmail?.text.toString()
                 val userPassword=binding?.editTextPassword?.text.toString()
                 val userConfirmPassword=binding?.editTextConfirmPassword?.text.toString()
+                val userName=binding?.editTextName?.text.toString()
 
                 if(userPassword!=userConfirmPassword){
                     Toast.makeText(activity,"confirm-password and password field did not match",Toast.LENGTH_SHORT).show()
@@ -57,8 +58,10 @@ class RegisterFragment : Fragment(R.layout.fragment_register){
                         if(response.isSuccessful){
                             sharedViewModel.setEmail(userEmail)
                             sharedViewModel.setPassword(userPassword)
+                            sharedViewModel.setName(userName)
                             sharedViewModel.setOtp(response.body()?.otp.toString())
                             sharedViewModel.setHashedOtp(response.body()?.hashedotp.toString())
+
                             Toast.makeText(activity,"OTP sent",Toast.LENGTH_SHORT).show()
                             replaceFragment(OtpFragment())
                         }

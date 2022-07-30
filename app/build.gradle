@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.expensemanager"
-        minSdk 24
+        minSdk 28
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -58,4 +58,14 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
     implementation "androidx.core:core-ktx:+"
+
+    //findnavcontroller
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.0"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.0"
+
+    //for adding cardview
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //for adding recylerview
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
 }

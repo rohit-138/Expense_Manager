@@ -1,5 +1,7 @@
 package com.example.expensemanager
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -17,17 +19,22 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //setting up api config
-        var repository=Repository()
-        val viewModelFactory= MainViewModelFactory(repository)
+        //setting up api confi
+        val viewModelFactory= MainViewModelFactory(Repository())
         viewModel=ViewModelProvider(this,viewModelFactory) [MainViewModel::class.java]
 
-    var loginFragment= LoginFragment()
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragment_Container,loginFragment)
-        fragmentTransaction.commit()
+        val sharedPref=this?.getSharedPreferences("loginTokens", Context.MODE_PRIVATE)
+
+        if(sharedPref?.getBoolean("success",false) == true){
+            val intent= Intent(this,HomeActivity::class.java)
+            startActivity(intent)
+        }
+        else{
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_Container,LoginFragment()).commit()
+        }
     }
+
+
 
 
 }

@@ -3,15 +3,46 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/account_circle_btn.xml" value="0.255" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/background_color.xml" value="0.2355" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/background_transparent.xml" value="0.1125" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/bottom_item_background.xml" value="0.21" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/btn_custom.xml" value="0.2355" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/custom_btn.xml" value="0.2355" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/dropdown_item.xml" value="0.2555" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/dropdown_items.xml" value="0.2555" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/edittextcolorstatelist.xml" value="0.1605" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/ic_account.xml" value="0.227" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.2355" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/ic_exit.xml" value="0.2555" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/ic_home.xml" value="0.2455" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1555" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/ic_menu.xml" value="0.121" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/ic_power.xml" value="0.2455" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/progress_bg.xml" value="0.2205" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/shadow.xml" value="0.2355" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/drawable/spending.xml" value="0.227" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout-v28/fragment_home.xml" value="0.24895833333333334" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/app_bar_home.xml" value="0.25" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/content_home.xml" value="0.25" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/content_home2.xml" value="0.25" />
-        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/dropdown_items.xml" value="0.24895833333333334" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_account.xml" value="0.264" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_first.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_first2.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_help.xml" value="0.1598731884057971" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_make_transaction.xml" value="0.264" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_otp.xml" value="0.25" />
         <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/fragment_register.xml" value="0.4" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/layout/transaction_item_list.xml" value="0.264" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/menu/bottom_menu.xml" value="0.25" />
+        <entry key="..\:/Projects/Expense manager/Frontend/app/src/main/res/menu/home.xml" value="0.25" />
         <entry key="..\:/android/ExpenseManager/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2455" />
         <entry key="..\:/android/ExpenseManager/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/android/ExpenseManager/app/src/main/res/layout/fragment_home.xml" value="0.25" />

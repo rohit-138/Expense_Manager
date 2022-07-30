@@ -6,5 +6,6 @@ data class LoginData(
 )
 data class LoginResponse(
     val success:Boolean,
-    val token:String
+    val token:String,
+    val name:String
 )

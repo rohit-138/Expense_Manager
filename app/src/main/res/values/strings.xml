@@ -30,4 +30,11 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="guest_user">Guest User</string>
+    <string name="this_month">This month</string>
+    <string name="rs_00">Rs 00</string>
+    <string-array name="transaction_type">
+        <item>Expense</item>
+        <item>Income</item>
+    </string-array>
 </resources>

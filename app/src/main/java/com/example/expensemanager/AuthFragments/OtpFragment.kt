@@ -40,7 +40,7 @@ class OtpFragment : Fragment() {
         val sharedPref=this.activity?.getSharedPreferences("loginTokens", Context.MODE_PRIVATE)
         val editor=sharedPref?.edit()
 
-
+        val name=sharedViewModel.getName()
         val email=sharedViewModel.getEmail()
         val password=sharedViewModel.getPassword()
         val hashedotp=sharedViewModel.getHashedOtp()
@@ -49,9 +49,7 @@ class OtpFragment : Fragment() {
         binding?.btnSubmit?.setOnClickListener {
             val otp=binding?.editTextNumberPassword?.text.toString()
 
-
-//            val registerData=
-            viewModel.pushRegisterDetails(RegisterData(email,password,otp,hashedotp))
+            viewModel.pushRegisterDetails(RegisterData(name,email,password,otp,hashedotp))
 
             viewModel.myRegisterDataResponse.observe(viewLifecycleOwner, Observer { response->
                 if(response.isSuccessful){
@@ -61,7 +59,8 @@ class OtpFragment : Fragment() {
 
                     val loginStatus=sharedPref?.getBoolean("success",false)
                     if(loginStatus==true) {
-                        val intent=Intent(requireActivity(),MainActivity2::class.java)
+                        editor?.putString("name",name)
+                        val intent=Intent(requireActivity(),HomeActivity::class.java)
                         startActivity(intent)
                     }
                 }
@@ -75,8 +74,6 @@ class OtpFragment : Fragment() {
                     else{
                         Toast.makeText(activity,"Some unexpected error occured",Toast.LENGTH_LONG).show()
                     }
-//                    Toast.makeText(activity,response.code()?.toString(),Toast.LENGTH_LONG).show()
-                    Log.d("Main", "this is response   $response")
                 }
             })
         }
