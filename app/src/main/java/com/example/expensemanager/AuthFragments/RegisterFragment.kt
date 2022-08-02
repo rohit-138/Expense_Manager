@@ -42,10 +42,10 @@ class RegisterFragment : Fragment(R.layout.fragment_register){
             viewModel= ViewModelProvider(this,viewModelFactory) [MainViewModel::class.java]
             // send request to send otp for verification
             btnRegister?.setOnClickListener {
-                val userEmail= binding?.editTextEmail?.text.toString()
-                val userPassword=binding?.editTextPassword?.text.toString()
-                val userConfirmPassword=binding?.editTextConfirmPassword?.text.toString()
-                val userName=binding?.editTextName?.text.toString()
+                val userEmail= binding?.TextEmail?.text.toString()
+                val userPassword=binding?.TextPassword?.text.toString()
+                val userConfirmPassword=binding?.TextConfirmPassword?.text.toString()
+                val userName=binding?.TextName?.text.toString()
 
                 if(userPassword!=userConfirmPassword){
                     Toast.makeText(activity,"confirm-password and password field did not match",Toast.LENGTH_SHORT).show()
